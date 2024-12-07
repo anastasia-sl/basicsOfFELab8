@@ -17,21 +17,51 @@ body {
     margin: 0 auto;
 }
 
-/* Header */
-.header {
+/* Navigation Menu */
+.navbar {
     background: #003366;
     color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/overhead-view-of-business-strategy-meeting.jpg&w=1200&h=630') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
 }
 
-.header h1 {
+.hero h1 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.header p {
+.hero p {
     font-size: 1.2rem;
-    margin-top: 0.5rem;
 }
 
 /* Services Section */
@@ -97,6 +127,15 @@ body {
     font-size: 1.2rem;
 }
 
+/* Footer */
+.footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
 /* Testimonials */
 .testimonials {
     background: #003366;
@@ -160,21 +199,15 @@ body {
     font-size: 1.2rem;
 }
 
-/* Footer */
-.footer {
-    background: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .service-cards,
-    .cases,
-    .team-members,
-    .stats {
+    .nav-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .service-cards,
+    .cases {
+        flex-direction: column;
     }
 }
